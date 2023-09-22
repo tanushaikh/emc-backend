@@ -13,7 +13,9 @@ app.register_blueprint(login_bp)
 @app.route('/')
 def hello_world():
     return 'Hello World Again'
-
+@app.route('/')
+def hello():
+    return 'Hello World Again'
 # main driver function
 if __name__ == '__main__':
     app.run()
